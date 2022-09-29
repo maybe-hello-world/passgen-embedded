@@ -1,0 +1,23 @@
+pub(crate) static NUMBERS_EXCLUDE_SIMILAR: [u8; 8] = [50, 51, 52, 53, 54, 55, 56, 57];
+
+pub(crate) static LOWERCASE_LETTERS_EXCLUDE_SIMILAR: [u8; 23] = [
+    97, 98, 99, 100, 101, 102, 103, 104, 106, 107,
+    109, 110, 112, 113, 114, 115, 116, 117, 118, 119, 120, 121, 122,
+];
+
+pub(crate) static UPPERCASE_LETTERS_EXCLUDE_SIMILAR: [u8; 24] = [
+    65, 66, 67, 68, 69, 70, 71, 72, 74, 75, 76, 77,
+    78, 80, 81, 82, 83, 84, 85, 86, 87, 88, 89, 90
+];
+
+pub(crate) static SYMBOLS_EXCLUDE_SIMILAR: [u8; 24] = [
+    33, 35, 36, 37, 38, 40, 41, 42, 43, 45, 58, 59,
+    60, 61, 62, 63, 64, 91, 93, 94, 95, 123, 125, 126
+];
+
+pub(crate) static POOL: [&[u8]; 4] = [
+    &NUMBERS_EXCLUDE_SIMILAR,
+    &LOWERCASE_LETTERS_EXCLUDE_SIMILAR,
+    &UPPERCASE_LETTERS_EXCLUDE_SIMILAR,
+    &SYMBOLS_EXCLUDE_SIMILAR
+];

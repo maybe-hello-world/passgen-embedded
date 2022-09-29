@@ -1,0 +1,12 @@
+App(
+    appid="passgen_app",
+    name="Password Generator",
+    apptype=FlipperAppType.EXTERNAL,
+    entry_point="passgen_entrypoint_app",
+    cdefines=["APP_PASSGEN"],
+    requires=["gui"],
+    stack_size=2 * 1024,
+    fap_libs=[
+        "libpassgen_embedded",
+        ],
+)
